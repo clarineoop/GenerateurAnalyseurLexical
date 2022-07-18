@@ -1,0 +1,34 @@
+digraph dfa_min {
+	fontname="Helvetica,Arial,sans-serif";
+	node [fontname="Helvetica,Arial,sans-serif"];
+	edge [fontname="Helvetica,Arial,sans-serif"];
+	rankdir=LR;
+	node [shape = doublecircle]; 6; 7; 
+	node [shape = point ]; qi0
+	node [shape = circle];
+	qi0 -> 1;
+	0 -> 0 [ label = "a" ];
+	0 -> 0 [ label = "b" ];
+	0 -> 0 [ label = "c" ];
+	1 -> 1 [ label = "a" ];
+	1 -> 2 [ label = "b" ];
+	1 -> 0 [ label = "c" ];
+	2 -> 3 [ label = "a" ];
+	2 -> 0 [ label = "b" ];
+	2 -> 1 [ label = "c" ];
+	3 -> 0 [ label = "a" ];
+	3 -> 4 [ label = "b" ];
+	3 -> 5 [ label = "c" ];
+	4 -> 6 [ label = "a" ];
+	4 -> 0 [ label = "b" ];
+	4 -> 0 [ label = "c" ];
+	5 -> 7 [ label = "a" ];
+	5 -> 0 [ label = "b" ];
+	5 -> 0 [ label = "c" ];
+	6 -> 0 [ label = "a" ];
+	6 -> 0 [ label = "b" ];
+	6 -> 0 [ label = "c" ];
+	7 -> 0 [ label = "a" ];
+	7 -> 0 [ label = "b" ];
+	7 -> 0 [ label = "c" ];
+}

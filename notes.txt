@@ -1,0 +1,20 @@
+Installation graphviz:
+sudo apt-get install graphviz
+
+Generation graph à partir d'un fichier dot
+dot -Tpng ast.dot -o ast.png
+
+comment faire le debugging?
+https://www.commentcamarche.net/faq/4791-langage-c-c-c-erreur-de-segmentation
+
+1. Generation d'un AST
+Infix To Postfix Conversion Using Stack [with C program]: 
+https://www.includehelp.com/c/infix-to-postfix-conversion-using-stack-with-c-program.aspx
+Exemple: a|b => ab|
+
+From Postfix expression to tree
+https://www.geeksforgeeks.org/expression-tree/
+
+2. Generation d'un NFA
+https://www.geeksforgeeks.org/c-program-to-simulate-nondeterministic-finite-automata-nfa/
+

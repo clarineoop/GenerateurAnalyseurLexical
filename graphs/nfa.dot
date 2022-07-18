@@ -1,0 +1,31 @@
+digraph nfa {
+	fontname="Helvetica,Arial,sans-serif";
+	node [fontname="Helvetica,Arial,sans-serif"];
+	edge [fontname="Helvetica,Arial,sans-serif"];
+	rankdir=LR;
+	node [shape = doublecircle]; q24;
+	node [shape = point ]; qi
+	node [shape = circle];
+	qi -> q9;
+	q1 -> q2 [ label = "a" ];
+	q3 -> q4 [ label = "b" ];
+	q4 -> q6 [ label = "c" ];
+	q7 -> q1 [ label = "ε" ];
+	q7 -> q3 [ label = "ε" ];
+	q2 -> q8 [ label = "ε" ];
+	q6 -> q8 [ label = "ε" ];
+	q9 -> q7 [ label = "ε" ];
+	q9 -> q10 [ label = "ε" ];
+	q8 -> q10 [ label = "ε" ];
+	q8 -> q7 [ label = "ε" ];
+	q10 -> q12 [ label = "b" ];
+	q12 -> q14 [ label = "a" ];
+	q15 -> q16 [ label = "c" ];
+	q16 -> q18 [ label = "a" ];
+	q19 -> q20 [ label = "b" ];
+	q20 -> q22 [ label = "a" ];
+	q14 -> q15 [ label = "ε" ];
+	q14 -> q19 [ label = "ε" ];
+	q18 -> q24 [ label = "ε" ];
+	q22 -> q24 [ label = "ε" ];
+}

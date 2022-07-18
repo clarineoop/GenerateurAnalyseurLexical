@@ -1,0 +1,22 @@
+digraph dfa {
+	fontname="Helvetica,Arial,sans-serif";
+	node [fontname="Helvetica,Arial,sans-serif"];
+	edge [fontname="Helvetica,Arial,sans-serif"];
+	rankdir=LR;
+	node [shape = doublecircle]; 8; 9; 
+	node [shape = point ]; qi0
+	node [shape = circle];
+	qi0 -> 1;
+	1 -> 2 [ label = "a" ];
+	1 -> 3 [ label = "b" ];
+	2 -> 2 [ label = "a" ];
+	2 -> 3 [ label = "b" ];
+	3 -> 4 [ label = "a" ];
+	3 -> 5 [ label = "c" ];
+	4 -> 6 [ label = "b" ];
+	4 -> 7 [ label = "c" ];
+	5 -> 2 [ label = "a" ];
+	5 -> 3 [ label = "b" ];
+	6 -> 8 [ label = "a" ];
+	7 -> 9 [ label = "a" ];
+}

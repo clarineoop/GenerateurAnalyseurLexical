@@ -1,0 +1,38 @@
+graph AST {
+	node [fontname="Arial"];
+	r18[label=<r18<BR />.<BR /><FONT POINT-SIZE="10">concaténation</FONT>>];
+	r18 -- r6;
+	r18 -- r17;
+	r6[label=<r6<BR />*<BR /><FONT POINT-SIZE="10">répétition de Kleene</FONT>>];
+	r6 -- r5;
+	r5[label=<r5<BR />|<BR /><FONT POINT-SIZE="10">disjonction</FONT>>];
+	r5 -- r1;
+	r5 -- r4;
+	r1[label=<r1<BR />a>];
+	r4[label=<r4<BR />.<BR /><FONT POINT-SIZE="10">concaténation</FONT>>];
+	r4 -- r2;
+	r4 -- r3;
+	r2[label=<r2<BR />b>];
+	r3[label=<r3<BR />c>];
+	r17[label=<r17<BR />.<BR /><FONT POINT-SIZE="10">concaténation</FONT>>];
+	r17 -- r9;
+	r17 -- r16;
+	r9[label=<r9<BR />.<BR /><FONT POINT-SIZE="10">concaténation</FONT>>];
+	r9 -- r7;
+	r9 -- r8;
+	r7[label=<r7<BR />b>];
+	r8[label=<r8<BR />a>];
+	r16[label=<r16<BR />|<BR /><FONT POINT-SIZE="10">disjonction</FONT>>];
+	r16 -- r12;
+	r16 -- r15;
+	r12[label=<r12<BR />.<BR /><FONT POINT-SIZE="10">concaténation</FONT>>];
+	r12 -- r10;
+	r12 -- r11;
+	r10[label=<r10<BR />c>];
+	r11[label=<r11<BR />a>];
+	r15[label=<r15<BR />.<BR /><FONT POINT-SIZE="10">concaténation</FONT>>];
+	r15 -- r13;
+	r15 -- r14;
+	r13[label=<r13<BR />b>];
+	r14[label=<r14<BR />a>];
+}
