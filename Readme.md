@@ -1,4 +1,4 @@
-##Etapes pour exécuter le projet
+## Etapes pour exécuter le projet
 
 * Installer graphviz: sudo apt-get install graphviz
 * Se positioner dans le dossier src (cd)
